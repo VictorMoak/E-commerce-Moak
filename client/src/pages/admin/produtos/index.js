@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         overflow: 'auto',
     },
     container: {
-        paddingTop: theme.spacing(4),
+        paddingTop: theme.spacing(2),
         paddingBottom: theme.spacing(4),
     },
     paper: {
@@ -77,6 +77,8 @@ export default function ProdutosListagem() {
                 <Container maxWidth="lg" className={classes.container}>
                     <Grid container spacing={3}>
                         <Grid item sm={12}>
+                            <Button style={{ marginBottom: 15, marginRight: 8 }} variant="contained" href='/admin/'> Voltar</Button>
+                            <Button style={{ marginBottom: 15 }} variant="contained" color="primary" href='/admin/produtos/cadastrar/'> Cadastrar</Button>
                             <Paper className={classes.paper}>
                                 <h2>Listagem de Produtos</h2>
                                 <Grid container spacing={3}>
@@ -121,6 +123,6 @@ export default function ProdutosListagem() {
                     </Box>
                 </Container>
             </main>
-        </div>
+        </div >
     );
 }
