@@ -1,0 +1,216 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+.menu-principal{
+    width: 100%;
+    background-color: darkgrey;
+    height: 62px;
+}
+
+main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo{
+    float: left;
+    width: 70%;
+    padding-left:15px;
+}
+
+.redes-sociais ul li{
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.redes-sociais ul li:hover{
+    opacity: 65%;
+}
+.redes-sociais ul{
+    margin-top: 4%;
+}
+
+.redes-sociais{
+    width: 25%;
+    float: right;
+}
+
+.header-2{
+    background-color: rgb(255, 255, 255);
+    width: 980px;
+    margin: 0 auto;
+    padding: 6px;
+}
+
+.menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 18px;
+    height: 36px;
+}
+
+.menu ul li:hover{
+    border-bottom: 6px solid rgb(121, 0, 0); 
+    font-style: italic; 
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+    color: rgb(121, 0, 0);
+}
+
+.menu ul li a{
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menu{
+    width: 100%;
+    float: left;   
+}
+.menu-url{
+    float: left;
+    position: relative;
+    height: 60px;
+    left: 40%;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;    
+}
+
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 44.5px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('./assets/ant.png');
+    background-size: 100%;
+    top: 45%;
+    left: 1.5%;
+}
+
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 44.5px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('./assets/prox.png');
+    background-size: 100%;
+    top: 45%;
+    right: 2%;
+}
+
+ul.slick-dots{
+    margin: 0 auto;
+    width: 10%;
+    position: absolute;
+    left: 47%;
+    top: 83%;
+}
+
+ul.slick-dots li{
+    display: inline-block;
+}
+
+ul.slick-dots li button{
+    font-size: 0px;
+    border: 3.8px solid #FFFFFF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    background-color: transparent;
+}
+
+ul.slick-dots li.slick-active button{
+    background-color:rgb(121, 0, 0);
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+.slider-prod {
+    width: 40%;
+    float: left;
+    height: 60%;
+}
+
+.promo-news{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.newsletter{
+    float: right;
+    width: 50%;
+    height: 220px;
+    background-color: maroon;
+    margin: 10px;
+    padding: 0px 20px 20px 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+input[type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: solid  2px gray;
+    width: 80%;
+    margin-right: 8px;
+    float: left;
+    
+}
+
+.button2{
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: solid  2px gray;
+    width: 15%;
+    margin-right: 8px;
+    font-weight: bold;
+    
+}
+
+.button2:hover{
+    background-color: rgb(238, 31, 31);
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+
+
+
+
