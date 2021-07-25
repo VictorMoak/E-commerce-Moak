@@ -24,18 +24,18 @@ export default function Routes() {
             <Switch>
                 {/* Rotas Cliente */}
                 <Route path="/" exact component={Home} />
-                <Route path="/produtos/:idProduto" exact component={ProdutoDetails} />
+                <Route path="/produtos/:desc" exact component={ProdutoDetails} />
 
                 {/* Rotas Admin */}
                 <Route path="/admin" exact component={Dashboard} />
 
                 <Route path="/admin/produtos" exact component={Produtos} />
                 <Route path="/admin/produtos/cadastrar" exact component={ProdutoCadastrar} />
-                <Route path="/admin/produtos/editar/:idProduto" exact component={ProdutoEditar} />
+                <Route path="/admin/produtos/editar/:desc" exact component={ProdutoEditar} />
 
                 <Route path="/admin/usuarios" exact component={Usuarios} />
                 <Route path="/admin/usuarios/cadastrar" exact component={UsuarioCadastrar} />
-                <Route path="/admin/usuarios/editar/:idProduto" exact component={UsuarioEditar} />
+                <Route path="/admin/usuarios/editar/:nome" exact component={UsuarioEditar} />
 
 
             </Switch>

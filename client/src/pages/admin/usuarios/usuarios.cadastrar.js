@@ -52,25 +52,17 @@ export default function UsuarioCadastrar() {
     const [tipo, setTipo] = useState('');
     const [senha, setSenha] = useState('');
 
-    // const {form, setForm} = use StaticRange({
-    //     Nome: '',
-    //     Email: '',
-    //     Tipo: '',
-    //     Senha: '',
-    // });
 
     async function handleSubmit() {
-        const dados = { Nome: nome, Email: email, Tipo: tipo, Senha: senha }
+        const dados = { nome: nome, email: email, tipo: tipo, senha: senha }
         console.log(dados)
         const response = await api.post('/api/addUsuarios', dados)
 
-        console.log(response)
-
-        // if (response.status === 200) {
-        //     window.location.href = '/usuarios'
-        // } else {
-        //     alert('Erro')
-        // }
+        if (response.status === 200) {
+            window.location.href = '/admin/usuarios'
+        } else {
+            alert('Erro')
+        }
     }
 
     return (
