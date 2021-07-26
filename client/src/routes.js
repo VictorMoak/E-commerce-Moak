@@ -9,9 +9,9 @@ import Produtos from './pages/admin/produtos';
 import ProdutoEditar from './pages/admin/produtos/produtos.editar'
 import ProdutoCadastrar from './pages/admin/produtos/produtos.cadastrar'
 
-import Usuarios from './pages/admin/usuarios';
-import UsuarioEditar from './pages/admin/usuarios/usuarios.editar'
-import UsuarioCadastrar from './pages/admin/usuarios/usuarios.cadastrar'
+import Clientes from './pages/admin/clientes';
+import ClienteEditar from './pages/admin/clientes/clientes.editar'
+import ClienteCadastrar from './pages/admin/clientes/clientes.cadastrar'
 
 //IMPORTS CLIENT
 import Home from './pages/client/home';
@@ -33,9 +33,9 @@ export default function Routes() {
                 <Route path="/admin/produtos/cadastrar" exact component={ProdutoCadastrar} />
                 <Route path="/admin/produtos/editar/:desc" exact component={ProdutoEditar} />
 
-                <Route path="/admin/usuarios" exact component={Usuarios} />
-                <Route path="/admin/usuarios/cadastrar" exact component={UsuarioCadastrar} />
-                <Route path="/admin/usuarios/editar/:nome" exact component={UsuarioEditar} />
+                <Route path="/admin/clientes" exact component={Clientes} />
+                <Route path="/admin/clientes/cadastrar" exact component={ClienteCadastrar} />
+                <Route path="/admin/clientes/editar/:nm" exact component={ClienteEditar} />
 
 
             </Switch>

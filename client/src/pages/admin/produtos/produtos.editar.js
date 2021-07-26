@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function ProdutoCadastrar() {
+export default function ProdutoEditar() {
     const classes = useStyles();
 
     const [descricao = '', setDescricao] = useState('');

@@ -16,11 +16,11 @@ export const mainListItems = (
             </ListItemIcon>
             <ListItemText primary="Dashboard" />
         </ListItem>
-        <ListItem button component="a" href="/admin/usuarios">
+        <ListItem button component="a" href="/admin/clientes">
             <ListItemIcon>
                 <PeopleIcon />
             </ListItemIcon>
-            <ListItemText primary="Usuários" />
+            <ListItemText primary="Clientes" />
         </ListItem>
         <ListItem button component="a" href="/admin/produtos">
             <ListItemIcon>
