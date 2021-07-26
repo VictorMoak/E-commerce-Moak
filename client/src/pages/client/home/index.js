@@ -3,7 +3,7 @@ import React from 'react';
 export default function Home() {
     return (
         <div>
-            <meta http-equiv="Refresh" content="0; url=#../../admin/" /> 
+            <meta http-equiv="Refresh" content="0; url=../../admin/dashboard/index" /> 
             {/*Redirecionamento temporario. Até vincular com a página cliente*/}
         </div>
     );
