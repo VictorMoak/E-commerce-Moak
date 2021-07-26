@@ -59,7 +59,7 @@ export default function ClientesListagem() {
 
     async function handleDelete(nome) {
         if (window.confirm('Deseja realmente excluir o cliente ' + nome + '?')) {
-            var result = await api.delete('/api/clientes/' + nome);
+            var result = await api.delete('/api/clientes-delete/' + nome);
             if (result.status == 200) {
                 window.location.href = '/admin/clientes';
                 alert(nome + ' Excluído com Sucesso!');
@@ -87,7 +87,7 @@ export default function ClientesListagem() {
                                             <Table className={classes.table} size="small" aria-label="a dense table">
                                                 <TableHead>
                                                     <TableRow>
-                                                        <TableCell>Nome Completo</TableCell>
+                                                        <TableCell strongs>Nome Completo</TableCell>
                                                         <TableCell align="center">CPF</TableCell>
                                                         <TableCell align="center">Data de Nascimento</TableCell>
                                                         <TableCell align="center">CEP</TableCell>

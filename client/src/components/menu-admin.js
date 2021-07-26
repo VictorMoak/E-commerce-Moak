@@ -12,6 +12,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import logoSistema from '../assets/img/logo.png';
 
 const drawerWidth = 240;
 
@@ -113,6 +114,7 @@ export default function MenuAdim({ title }) {
                 open={open}
             >
                 <div className={classes.toolbarIcon}>
+                    <img styke={{width:150,height:50}} src={logoSistema} alt="Logo Sistema" />
                     <IconButton onClick={handleDrawerClose}>
                         <ChevronLeftIcon />
                     </IconButton>

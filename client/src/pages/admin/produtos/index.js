@@ -59,7 +59,7 @@ export default function ProdutosListagem() {
 
     async function handleDelete(desc) {
         if (window.confirm('Deseja realmente excluir o produto ' + desc + '?')) {
-            var result = await api.delete('/api/produtos/' + desc);
+            var result = await api.delete('/api/produtos-delete/' + desc);
             if (result.status == 200) {
                 window.location.href = '/admin/produtos';
                 alert(desc + ' Excluído com Sucesso!');
