@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 
 //IMPORTS ADMIN
 import Dashboard from './pages/admin/dashboard';
@@ -20,7 +20,7 @@ import ProdutoDetails from './pages/client/produtos/produtos.details'
 
 export default function Routes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 {/* Rotas Cliente */}
                 <Route path="/" exact component={Home} />
@@ -39,6 +39,6 @@ export default function Routes() {
 
 
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
