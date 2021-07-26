@@ -1,7 +1,7 @@
 {
   "name": "e-commerce-moak",
   "version": "1.0.0",
-  "main": "/client/src/pages/admin/dashboard/index.js",
+  "main": "index.js",
   "scripts": {
     "client": "npm start --prefix client",
     "start": "npm run client"
@@ -24,11 +24,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VictorMoak/LandingPage.git"
+    "url": "git+https://github.com/VictorMoak/E-commerce-Moak.git"
   },
   "bugs": {
-    "url": "https://github.com/VictorMoak/LandingPage/issues"
+    "url": "https://github.com/VictorMoak/E-commerce-Moak/issues"
   },
-  "homepage": "https://github.com/VictorMoak/LandingPage#readme",
+  "homepage": "https://github.com/VictorMoak/E-commerce-Moak#readme",
   "description": ""
 }
