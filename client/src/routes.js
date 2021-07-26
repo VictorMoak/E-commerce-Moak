@@ -20,7 +20,7 @@ import ProdutoDetails from './pages/client/produtos/produtos.details'
 
 export default function Routes() {
     return (
-        <HashRouter>
+        <HashRouter basename="/">
             <Switch>
                 {/* Rotas Cliente */}
                 <Route path="/" exact component={Home} />
