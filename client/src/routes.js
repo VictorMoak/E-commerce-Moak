@@ -1,29 +1,29 @@
 import React from 'react';
 
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 //IMPORTS ADMIN
 import Dashboard from './pages/admin/dashboard';
 
 import Produtos from './pages/admin/produtos';
-import ProdutoEditar from './pages/admin/produtos/produtos.editar'
-import ProdutoCadastrar from './pages/admin/produtos/produtos.cadastrar'
+import ProdutoEditar from './pages/admin/produtos/produtos.editar';
+import ProdutoCadastrar from './pages/admin/produtos/produtos.cadastrar';
 
 import Clientes from './pages/admin/clientes';
-import ClienteEditar from './pages/admin/clientes/clientes.editar'
-import ClienteCadastrar from './pages/admin/clientes/clientes.cadastrar'
+import ClienteEditar from './pages/admin/clientes/clientes.editar';
+import ClienteCadastrar from './pages/admin/clientes/clientes.cadastrar';
 
 //IMPORTS CLIENT
-import Home from './pages/client/home';
-import ProdutoDetails from './pages/client/produtos/produtos.details'
+//import Home from './pages/client/home';
+import ProdutoDetails from './pages/client/produtos/produtos.details';
 
 
 export default function Routes() {
     return (
-        <HashRouter basename="/">
+        <BrowserRouter basename="/">
             <Switch>
                 {/* Rotas Cliente */}
-                <Route path="/" exact component={Home} />
+                <Route path="/" exact component={Dashboard} /> {/*Home*/}
                 <Route path="/produtos/:desc" exact component={ProdutoDetails} />
 
                 {/* Rotas Admin */}
@@ -39,6 +39,6 @@ export default function Routes() {
 
 
             </Switch>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
