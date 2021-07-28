@@ -7,10 +7,10 @@ import Paper from '@material-ui/core/Paper';
 import MenuAdmin from '../../../components/menu-admin';
 import TextField from '@material-ui/core/TextField';
 import Footer from '../../../components/footer-admin';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
+// import FormControl from '@material-ui/core/FormControl';
+// import Select from '@material-ui/core/Select';
+// import InputLabel from '@material-ui/core/InputLabel';
+// import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
 import api from '../../../services/api';
 
@@ -57,8 +57,10 @@ export default function ClienteCadastrar() {
     const [uf, setUf] = useState('');
 
     async function handleSubmit() {
-        const dados = { nome: nome, cpf: cpf, dt_nascimento: dt_nascimento,
-            cep: cep, logradouro: logradouro, bairro: bairro, cidade: cidade, uf: uf}
+        const dados = {
+            nome: nome, cpf: cpf, dt_nascimento: dt_nascimento,
+            cep: cep, logradouro: logradouro, bairro: bairro, cidade: cidade, uf: uf
+        }
         console.log(dados)
         const response = await api.post('/api/addclientes', dados)
 

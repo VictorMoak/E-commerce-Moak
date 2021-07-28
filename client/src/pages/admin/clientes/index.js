@@ -16,6 +16,8 @@ import TableRow from '@material-ui/core/TableRow';
 import api from '../../../services/api';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
+import DeleteIcon from '@material-ui/icons/Delete';
+import EditIcon from '@material-ui/icons/Edit';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -33,6 +35,8 @@ const useStyles = makeStyles((theme) => ({
     },
     container: {
         paddingTop: theme.spacing(2),
+        paddingLeft: theme.spacing(1),
+        paddingRight: theme.spacing(1),
         paddingBottom: theme.spacing(4),
     },
     paper: {
@@ -82,7 +86,7 @@ export default function ClientesListagem() {
                             <Paper className={classes.paper}>
                                 <h2>Listagem de Clientes</h2>
                                 <Grid container spacing={3}>
-                                    <Grid item xs={12} sm={12}>
+                                    <Grid item xs={13} sm={13}>
                                         <TableContainer component={Paper}>
                                             <Table className={classes.table} size="small" aria-label="a dense table">
                                                 <TableHead>
@@ -113,8 +117,8 @@ export default function ClientesListagem() {
                                                             <TableCell align="center">{row.uf}</TableCell>
                                                             <TableCell align="center">
                                                                 <ButtonGroup aria-label="outlined primary button group">
-                                                                    <Button color="primary" href={'/admin/clientes/editar/' + row.nome}>Atualizar</Button>
-                                                                    <Button color="secondary" onClick={() => handleDelete(row.nome)}>Excluir</Button>
+                                                                    <Button size="small" startIcon={<EditIcon />} color="primary" href={'/admin/clientes/editar/' + row.nome}>Atualizar</Button>
+                                                                    <Button size="small" startIcon={<DeleteIcon />} color="secondary" onClick={() => handleDelete(row.nome)}>Excluir</Button>
                                                                 </ButtonGroup>
                                                             </TableCell>
                                                         </TableRow>

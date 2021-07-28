@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function MenuAdim({ title }) {
+export default function MenuAdmin({ title }) {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
@@ -114,7 +114,7 @@ export default function MenuAdim({ title }) {
                 open={open}
             >
                 <div className={classes.toolbarIcon}>
-                    <img styke={{width:150,height:50}} src={logoSistema} alt="Logo Sistema" />
+                    <img styke={{ width: 150, height: 50 }} src={logoSistema} alt="Logo Sistema" />
                     <IconButton onClick={handleDrawerClose}>
                         <ChevronLeftIcon />
                     </IconButton>

@@ -16,6 +16,8 @@ import TableRow from '@material-ui/core/TableRow';
 import api from '../../../services/api';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
+import DeleteIcon from '@material-ui/icons/Delete';
+import EditIcon from '@material-ui/icons/Edit';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -33,6 +35,8 @@ const useStyles = makeStyles((theme) => ({
     },
     container: {
         paddingTop: theme.spacing(2),
+        paddingLeft: theme.spacing(1),
+        paddingRight: theme.spacing(1),
         paddingBottom: theme.spacing(4),
     },
     paper: {
@@ -103,8 +107,8 @@ export default function ProdutosListagem() {
                                                             <TableCell align="center">{row.estoqueMin}</TableCell>
                                                             <TableCell align="center">
                                                                 <ButtonGroup aria-label="outlined primary button group">
-                                                                    <Button color="primary" href={'/admin/produtos/editar/' + row.descricao}>Atualizar</Button>
-                                                                    <Button color="secondary" onClick={() => handleDelete(row.descricao)}>Excluir</Button>
+                                                                    <Button size="small" startIcon={<EditIcon />} color="primary" href={'/admin/produtos/editar/' + row.descricao}>Atualizar</Button>
+                                                                    <Button size="small" startIcon={<DeleteIcon />} color="secondary" onClick={() => handleDelete(row.descricao)}>Excluir</Button>
                                                                 </ButtonGroup>
 
                                                             </TableCell>
